@@ -1,0 +1,44 @@
+{
+    "laraigo":{
+        "renovacion_especial":[
+            {
+                "campaign": "renovacion_especial",
+                "reports":[
+                    {
+                        "code": "clasificaciones",
+                        "properties": {
+                            "dbType": {
+                            },
+                            "renameColumns": {},
+                            "converters": {}
+                        },
+                        "tipo": "csv",
+                        "anadir_fecha": false
+                    },
+                    {
+                        "code": "tickets",
+                        "properties": {
+                            "dbType": {
+                            },
+                            "renameColumns": {},
+                            "converters": {}
+                        },
+                        "tipo": "csv",
+                        "anadir_fecha": false
+                    },
+                    {
+                        "code": "productividad_asesores",
+                        "properties": {
+                            "dbType": {
+                            },
+                            "renameColumns": {},
+                            "converters": {}
+                        },
+                        "tipo": "excel",
+                        "anadir_fecha": true
+                    }
+                ]
+            }
+        ]
+    }
+}

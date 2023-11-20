@@ -1,0 +1,22 @@
+{
+    "laraigo":{
+        "renovacion_especial":[
+            {
+                "campaign": "renovacion_especial",
+                "reports":[
+                    {
+                        "code": "tickets",
+                        "properties": {
+                            "dbType": {
+                            },
+                            "renameColumns": {},
+                            "converters": {}
+                        },
+                        "tipo": "csv",
+                        "anadir_fecha": false
+                    }
+                ]
+            }
+        ]
+    }
+}
