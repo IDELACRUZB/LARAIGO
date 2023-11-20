@@ -136,9 +136,9 @@ class descargaReportes():
         time.sleep(1)
 
         #Selecciona fecha fin
-        anio_fin = fecha_inicio.year
-        mes_fin = fecha_inicio.month - 1
-        dia_fin = fecha_inicio.day
+        anio_fin = fecha_fin.year
+        mes_fin = fecha_fin.month - 1
+        dia_fin = fecha_fin.day
 
         if periodo_inicio == periodo_fin:
             dia_fin = self.driver.find_element(By.XPATH, f'//div[@class="rdrDays"]/button/span[@class="rdrDayNumber"]/span[text()="{dia_fin}"]')
@@ -232,9 +232,9 @@ class descargaReportes():
         time.sleep(1)
 
         #Selecciona fecha fin
-        anio_fin = fecha_inicio.year
-        mes_fin = fecha_inicio.month - 1
-        dia_fin = fecha_inicio.day
+        anio_fin = fecha_fin.year
+        mes_fin = fecha_fin.month - 1
+        dia_fin = fecha_fin.day
 
         if periodo_inicio == periodo_fin:
             dia_fin = self.driver.find_element(By.XPATH, f'//div[@class="rdrDays"]/button/span[@class="rdrDayNumber"]/span[text()="{dia_fin}"]')
@@ -325,9 +325,9 @@ class descargaReportes():
         time.sleep(1)
 
         #Selecciona fecha fin
-        anio_fin = fecha_inicio.year
-        mes_fin = fecha_inicio.month - 1
-        dia_fin = fecha_inicio.day
+        anio_fin = fecha_fin.year
+        mes_fin = fecha_fin.month - 1
+        dia_fin = fecha_fin.day
 
         if periodo_inicio == periodo_fin:
             dia_fin = self.driver.find_element(By.XPATH, f'//div[@class="rdrDays"]/button/span[@class="rdrDayNumber"]/span[text()="{dia_fin}"]')
