@@ -4,7 +4,7 @@ import json
 import glob
 from datetime import datetime
 from service.ReportService import ReportService
-
+"""
 mReport = ReportService()
 properties = mReport.getProperties()
 
@@ -22,6 +22,12 @@ currentDate = '20231104'
 patron = f"*_{currentDate}_*"
 archivos_coincidentes = glob.glob(os.path.join(directoryPath, patron))
 print(archivos_coincidentes)
+"""
+jsonDataReports = './importador/reports.json'
 
-    
+with open(jsonDataReports, "r") as json_file:
+    data = json.load(json_file)
+
+    for platform in data['laraigo']:
+        print(platform)
     

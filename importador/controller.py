@@ -30,12 +30,13 @@ with open(jsonDataReports, "r") as json_file:
                 properties = reporte["properties"]
                 tipo = reporte["tipo"]
                 anadir_fecha = reporte["anadir_fecha"]
+                data_base = reporte["data_base"]
                 print("Reporte:", codigo)
                 
                 directoryPath = ROOT_PATH  + platform + "\\" + codigo
                 currentDate = datetime.now().strftime("%Y%m%d")
                 #print(directoryPath)
-                #currentDate = '20231104'
+                #currentDate = '20231201'
 
                 # Los reportes son al d-1 por eso la fecha insert es al curdate-1
                 fecha_insert = None
@@ -57,7 +58,7 @@ with open(jsonDataReports, "r") as json_file:
                         'name': platform + "\\" + codigo + '\\' + patron,
                         'path' : archivos_coincidentes[0],
                         'table' : 'laraigo_' + codigo, # salesforce_1261mov1
-                        'db': 'bd_renovacion_especial',
+                        'db': data_base,
                         'properties' : properties,
                         'tipo': tipo,
                         'fecha_insert': fecha_insert

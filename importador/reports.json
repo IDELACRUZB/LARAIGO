@@ -1,11 +1,12 @@
 {
     "laraigo":{
-        "renovacion_especial":[
+        "retenciones":[
             {
                 "campaign": "renovacion_especial",
                 "reports":[
                     {
                         "code": "clasificaciones",
+                        "data_base": "bd_retenciones",
                         "properties": {
                             "dbType": {
                             },
@@ -17,6 +18,7 @@
                     },
                     {
                         "code": "tickets",
+                        "data_base": "bd_retenciones",
                         "properties": {
                             "dbType": {
                             },
@@ -28,6 +30,50 @@
                     },
                     {
                         "code": "productividad_asesores",
+                        "data_base": "bd_retenciones",
+                        "properties": {
+                            "dbType": {
+                            },
+                            "renameColumns": {},
+                            "converters": {}
+                        },
+                        "tipo": "excel",
+                        "anadir_fecha": true
+                    }
+                ]
+            }
+        ],
+        "renovacion_especial":[
+            {
+                "campaign": "renovacion_especial",
+                "reports":[
+                    {
+                        "code": "clasificaciones",
+                        "data_base": "bd_renovacion_especial",
+                        "properties": {
+                            "dbType": {
+                            },
+                            "renameColumns": {},
+                            "converters": {}
+                        },
+                        "tipo": "csv",
+                        "anadir_fecha": false
+                    },
+                    {
+                        "code": "tickets",
+                        "data_base": "bd_renovacion_especial",
+                        "properties": {
+                            "dbType": {
+                            },
+                            "renameColumns": {},
+                            "converters": {}
+                        },
+                        "tipo": "csv",
+                        "anadir_fecha": false
+                    },
+                    {
+                        "code": "productividad_asesores",
+                        "data_base": "bd_renovacion_especial",
                         "properties": {
                             "dbType": {
                             },
